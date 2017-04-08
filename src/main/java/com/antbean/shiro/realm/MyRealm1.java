@@ -26,7 +26,7 @@ public class MyRealm1 implements Realm {
 		String username = (String) token.getPrincipal();
 		String password = new String((char[]) token.getCredentials());
 
-		if (!"admin".equals(username)) {
+		if (!"zhang".equals(username)) {
 			throw new AccountException();
 		}
 		if (!"123".equals(password)) {

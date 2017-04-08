@@ -26,10 +26,10 @@ public class MyRealm2 implements Realm {
 		String username = (String) token.getPrincipal();
 		String password = new String((char[]) token.getCredentials());
 
-		if (!"lmh".equals(username)) {
+		if (!"wang".equals(username)) {
 			throw new AccountException();
 		}
-		if (!"456".equals(password)) {
+		if (!"123".equals(password)) {
 			throw new AccountException();
 		}
 
